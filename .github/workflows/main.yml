@@ -26,4 +26,4 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Test inventory list
-        run: ansible -i ./ansible-inventory/ubuntu.vmware.yml --list-hosts --vault-password-file ${{ secrets.VAULT_PASSWORD_FILE }} 
+        run: ansible -i ./ansible-inventory/ubuntu.vmware.yml all -m ping --vault-password-file ${{ secrets.VAULT_PASSWORD_FILE }} 

@@ -14,6 +14,5 @@ properties:
   - 'name'
   - 'guest.ipAddress'
   - 'config.name'
-  - 'config.uuid'
 filters:
   - config.guestId == "Ubuntu_64Guest"

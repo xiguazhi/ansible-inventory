@@ -17,4 +17,5 @@ properties:
 hostnames:
  - 'guest.ipAddress'
 filters:
-  - config.guestId == "Ubuntu_64Guest" and runtime.powerState == "poweredOn"
+  - config.guestId == "Ubuntu_64Guest" 
+  - runtime.powerState == "poweredOn"
